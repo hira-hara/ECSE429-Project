@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: TestProjectXMLDoc
+Test set: TestCategoryRelationshipsXMLDoc
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s -- in TestProjectXMLDoc
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 s -- in TestCategoryRelationshipsXMLDoc

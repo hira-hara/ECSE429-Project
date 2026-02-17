@@ -1,3 +1,6 @@
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItems;
 import static org.hamcrest.Matchers.notNullValue;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
@@ -13,7 +16,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 @TestMethodOrder(MethodOrderer.Random.class)
-public class TestCategoryRelationships {
+public class TestCategoryRelationshipsJSON {
     private static final String BASE_URL = "http://localhost:4567";
     private String testTodoId;
     private String testProjectId;
@@ -135,7 +138,6 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("POST /todos/:id/categories - Create todo-category relationship")
     void testPostTodoCategoryRelationship() {
-        // Link category to todo
         given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -150,9 +152,7 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("GET /todos/:id/categories - Return categories linked to todo")
     void testGetTodoCategoryRelationship() {
-        // Ensure relationship exists
         createTodoCategoryRelationship(testTodoId, testCategoryId);
-        // Fetch linked categories
         Response response = given()
                 .accept(ContentType.JSON)
                 .when()
@@ -167,14 +167,42 @@ public class TestCategoryRelationships {
         assert response.jsonPath().getList("categories") != null;
     }
 
+    /* /todos/1/categories */
+    @Test
+    @DisplayName("GET /todos/1/categories - Expect Office category")
+    void testGetTodo1Categories() {
+        given()
+                .accept(ContentType.JSON)
+                .when()
+                .get("/todos/1/categories")
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .body("categories.id", hasItems("1"))
+                .body("categories.title", hasItems("Office"));
+    }
+
+    /* /todos/2/categories */
+    @Test
+    @DisplayName("GET /todos/2/categories - Expect Home and Office categories")
+    void testGetTodo2Categories() {
+        given()
+                .accept(ContentType.JSON)
+                .when()
+                .get("/todos/2/categories")
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .body("categories.id", containsInAnyOrder("2", "1"))
+                .body("categories.title", containsInAnyOrder("Home", "Office"));
+    }
+
     /* GET /categories/:id/todos */
     @Test
     @DisplayName("GET /categories/:id/todos - Return todos linked to category")
     void testGetTodosByCategoryRelationship() {
-        // Ensure relationship exists
         createTodoCategoryRelationship(testTodoId, testCategoryId);
 
-        // Fetch linked todos
         Response response = given()
                 .accept(ContentType.JSON)
                 .when()
@@ -195,7 +223,6 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("POST /projects/:id/categories - Create project-category relationship")
     void testPostProjectCategoryRelationship() {
-        // Link category to project
         given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -210,9 +237,7 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("GET /projects/:id/categories - Return categories linked to project")
     void testGetProjectCategoryRelationship() {
-        // Ensure relationship exists
         createProjectCategoryRelationship(testProjectId, testCategoryId);
-        // Fetch linked categories
         Response response = given()
                 .accept(ContentType.JSON)
                 .when()
@@ -231,10 +256,8 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("GET /categories/:id/projects - Return projects linked to category")
     void testGetProjectsByCategoryRelationship() {
-        // Ensure relationship exists
         createProjectCategoryRelationship(testProjectId, testCategoryId);
 
-        // Fetch linked projects
         Response response = given()
                 .accept(ContentType.JSON)
                 .when()
@@ -255,10 +278,8 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("GET /todos/:id/tasksof - Return projects linked to todo")
     void testGetProjectsByTodoRelationship() {
-        // Ensure relationship exists
         createProjectTodoRelationship(testProjectId, testTodoId);
 
-        // Fetch linked projects
         Response response = given()
                 .accept(ContentType.JSON)
                 .when()
@@ -273,16 +294,32 @@ public class TestCategoryRelationships {
         assert response.jsonPath().getList("projects") != null;
     }
 
+    /* /projects/1/tasks */
+    @Test
+    @DisplayName("GET /projects/1/tasks - Expect todo 1 details")
+    void testGetProject1Tasks() {
+        given()
+                .accept(ContentType.JSON)
+                .when()
+                .get("/projects/1/tasks")
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .body("todos[0].id", equalTo("1"))
+                .body("todos[0].title", equalTo("scan paperwork"))
+                .body("todos[0].doneStatus", equalTo("false"))
+                .body("todos[0].categories[0].id", equalTo("1"))
+                .body("todos[0].tasksof[0].id", equalTo("1"));
+    }
+
     /* DELETION TESTS */
 
     /* DELETE /projects/:projectId/categories/:categoryId */
     @Test
     @DisplayName("DELETE /projects/:projectId/categories/:categoryId - Delete project-category relationship")
     void testDeleteProjectCategoryRelationship() {
-        // Ensure relationship exists
         createProjectCategoryRelationship(testProjectId, testCategoryId);
 
-        // Confirm relationship is visible before deletion
         Response beforeDelete = given()
                 .accept(ContentType.JSON)
                 .when()
@@ -294,7 +331,6 @@ public class TestCategoryRelationships {
         
         assert beforeDelete.jsonPath().getList("categories") != null;
 
-        // Delete relationship
         given()
                 .accept(ContentType.JSON)
                 .when()
@@ -302,7 +338,6 @@ public class TestCategoryRelationships {
                 .then()
                 .statusCode(200);
 
-        // Re-check linked categories
         given()
                 .accept(ContentType.JSON)
                 .when()
@@ -316,10 +351,8 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("DELETE /projects/:projectId/tasks/:todoId - Delete project-todo relationship")
     void testDeleteProjectTodoRelationship() {
-        // Ensure relationship exists
         createProjectTodoRelationship(testProjectId, testTodoId);
 
-        // Confirm relationship is visible before deletion
         Response beforeDelete = given()
                 .accept(ContentType.JSON)
                 .when()
@@ -331,7 +364,6 @@ public class TestCategoryRelationships {
         
         assert beforeDelete.jsonPath().getList("todos") != null;
 
-        // Delete relationship
         given()
                 .accept(ContentType.JSON)
                 .when()
@@ -339,7 +371,6 @@ public class TestCategoryRelationships {
                 .then()
                 .statusCode(200);
 
-        // Re-check linked todos
         given()
                 .accept(ContentType.JSON)
                 .when()
@@ -353,10 +384,8 @@ public class TestCategoryRelationships {
     @Test
     @DisplayName("DELETE /projects/:projectId/tasks/:todoId (second delete) - Should be idempotent and return 404")
     void testDeleteProjectTodoRelationshipIdempotent() {
-        // Ensure relationship exists
         createProjectTodoRelationship(testProjectId, testTodoId);
 
-        // First delete succeeds
         given()
                 .accept(ContentType.JSON)
                 .when()
@@ -364,7 +393,6 @@ public class TestCategoryRelationships {
                 .then()
                 .statusCode(200);
 
-        // Second delete confirms idempotency
         given()
                 .accept(ContentType.JSON)
                 .when()

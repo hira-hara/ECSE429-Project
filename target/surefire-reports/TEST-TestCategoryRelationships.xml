@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestCategoryRelationships" time="0.323" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestCategoryRelationships" time="0.33" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/amyding/Documents/ECSE429-Project/target/surefire/surefirebooter-20260217160303590_3.jar /Users/amyding/Documents/ECSE429-Project/target/surefire 2026-02-17T16-03-03_550-jvmRun1 surefire-20260217160303590_1tmp surefire_0-20260217160303590_2tmp"/>
+    <property name="sun.java.command" value="/Users/amyding/Documents/ECSE429-Project/target/surefire/surefirebooter-20260217172007527_3.jar /Users/amyding/Documents/ECSE429-Project/target/surefire 2026-02-17T17-20-07_482-jvmRun1 surefire-20260217172007527_1tmp surefire_0-20260217172007527_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/amyding/Documents/ECSE429-Project/target/test-classes:/Users/amyding/Documents/ECSE429-Project/target/classes:/Users/amyding/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/amyding/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/amyding/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/amyding/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/amyding/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/amyding/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/amyding/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/amyding/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/amyding/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/amyding/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/amyding/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/amyding/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/amyding/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/amyding/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/amyding/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/amyding/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/amyding/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/amyding/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/amyding/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/amyding/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/Users/amyding/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/Users/amyding/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/Users/amyding/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/Users/amyding/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/amyding/Documents/ECSE429-Project/target/surefire/surefirebooter-20260217160303590_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/amyding/Documents/ECSE429-Project/target/surefire/surefirebooter-20260217172007527_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.2"/>
@@ -60,14 +60,17 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testDeleteProjectTodoRelationshipIdempotent" classname="TestCategoryRelationships" time="0.053"/>
-  <testcase name="testGetProjectsByTodoRelationship" classname="TestCategoryRelationships" time="0.042"/>
-  <testcase name="testDeleteProjectCategoryRelationship" classname="TestCategoryRelationships" time="0.036"/>
-  <testcase name="testPostTodoCategoryRelationship" classname="TestCategoryRelationships" time="0.023"/>
-  <testcase name="testGetProjectCategoryRelationship" classname="TestCategoryRelationships" time="0.027"/>
-  <testcase name="testGetProjectsByCategoryRelationship" classname="TestCategoryRelationships" time="0.027"/>
-  <testcase name="testDeleteProjectTodoRelationship" classname="TestCategoryRelationships" time="0.041"/>
-  <testcase name="testPostProjectCategoryRelationship" classname="TestCategoryRelationships" time="0.017"/>
-  <testcase name="testGetTodosByCategoryRelationship" classname="TestCategoryRelationships" time="0.027"/>
-  <testcase name="testGetTodoCategoryRelationship" classname="TestCategoryRelationships" time="0.024"/>
+  <testcase name="testGetProjectCategoryRelationship" classname="TestCategoryRelationships" time="0.052"/>
+  <testcase name="testGetTodosByCategoryRelationship" classname="TestCategoryRelationships" time="0.028"/>
+  <testcase name="testPostTodoCategoryRelationship" classname="TestCategoryRelationships" time="0.021"/>
+  <testcase name="testGetTodo1Categories" classname="TestCategoryRelationships" time="0.022"/>
+  <testcase name="testGetProject1Tasks" classname="TestCategoryRelationships" time="0.03"/>
+  <testcase name="testGetTodo2Categories" classname="TestCategoryRelationships" time="0.03"/>
+  <testcase name="testDeleteProjectCategoryRelationship" classname="TestCategoryRelationships" time="0.027"/>
+  <testcase name="testDeleteProjectTodoRelationship" classname="TestCategoryRelationships" time="0.022"/>
+  <testcase name="testGetProjectsByCategoryRelationship" classname="TestCategoryRelationships" time="0.019"/>
+  <testcase name="testGetProjectsByTodoRelationship" classname="TestCategoryRelationships" time="0.019"/>
+  <testcase name="testDeleteProjectTodoRelationshipIdempotent" classname="TestCategoryRelationships" time="0.02"/>
+  <testcase name="testPostProjectCategoryRelationship" classname="TestCategoryRelationships" time="0.013"/>
+  <testcase name="testGetTodoCategoryRelationship" classname="TestCategoryRelationships" time="0.019"/>
 </testsuite>
