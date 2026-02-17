@@ -1,5 +1,3 @@
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
 import static org.hamcrest.Matchers.notNullValue;
 import org.junit.jupiter.api.Assumptions;
