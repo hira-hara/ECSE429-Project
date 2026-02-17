@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestProjectJSONDoc" time="2.138" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestProjectJSONDoc" time="2.737" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-17.0.18.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\idasu\AppData\Local\Temp\surefire802396450511197830\surefirebooter-20260217091642719_3.jar C:\Users\idasu\AppData\Local\Temp\surefire802396450511197830 2026-02-17T09-16-42_555-jvmRun1 surefire-20260217091642719_1tmp surefire_0-20260217091642719_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\idasu\AppData\Local\Temp\surefire11492528331161742116\surefirebooter-20260217112747343_3.jar C:\Users\idasu\AppData\Local\Temp\surefire11492528331161742116 2026-02-17T11-27-47_161-jvmRun1 surefire-20260217112747343_1tmp surefire_0-20260217112747343_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="TestProjectJSONDoc"/>
     <property name="surefire.test.class.path" value="C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project\target\test-classes;C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project\target\classes;C:\Users\idasu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\idasu\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\idasu\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\idasu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\idasu\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\idasu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\idasu\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\idasu\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\idasu\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\idasu\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\idasu\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\idasu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\idasu\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\idasu\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\idasu\AppData\Local\Temp\surefire802396450511197830\surefirebooter-20260217091642719_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\idasu\AppData\Local\Temp\surefire11492528331161742116\surefirebooter-20260217112747343_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.18+8-LTS"/>
@@ -59,27 +59,51 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testCreateUpdateDeleteFlow" classname="TestProjectJSONDoc" time="0.724">
-    <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 17 Feb 2026 14:16:44 GMT
+  <testcase name="testHeadProjectIDTasks" classname="TestProjectJSONDoc" time="0.728"/>
+  <testcase name="testGetProjectID" classname="TestProjectJSONDoc" time="0.085">
+    <system-out><![CDATA[TEST PROJECT: 29
+]]></system-out>
+  </testcase>
+  <testcase name="testPostProjectErr" classname="TestProjectJSONDoc" time="0.08">
+    <system-out><![CDATA[HTTP/1.1 404 Not Found
+Date: Tue, 17 Feb 2026 16:27:50 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Server: Jetty(9.4.z-SNAPSHOT)
 
 {
-    "id": "67",
+    "errorMessages": [
+        "No such project entity instance with GUID or ID hello found"
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProject" classname="TestProjectJSONDoc" time="0.073"/>
+  <testcase name="testPostProjectTasks" classname="TestProjectJSONDoc" time="0.065">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Date: Tue, 17 Feb 2026 16:27:50 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Server: Jetty(9.4.z-SNAPSHOT)
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateProject" classname="TestProjectJSONDoc" time="0.088"/>
+  <testcase name="testGetProjectIDTasks" classname="TestProjectJSONDoc" time="0.049"/>
+  <testcase name="testDeleteProjectIDErr" classname="TestProjectJSONDoc" time="0.045"/>
+  <testcase name="testCreateUpdateDeleteFlow" classname="TestProjectJSONDoc" time="0.073">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Tue, 17 Feb 2026 16:27:50 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Server: Jetty(9.4.z-SNAPSHOT)
+
+{
+    "id": "71",
     "title": "Done Project",
     "completed": "true",
     "active": "false",
     "description": ""
 }
-]]></system-out>
-  </testcase>
-  <testcase name="testGetProject" classname="TestProjectJSONDoc" time="0.075"/>
-  <testcase name="testDeleteProjectIDErr" classname="TestProjectJSONDoc" time="0.092"/>
-  <testcase name="testCreateProject" classname="TestProjectJSONDoc" time="0.061"/>
-  <testcase name="testGetProjectID" classname="TestProjectJSONDoc" time="0.048">
-    <system-out><![CDATA[TEST PROJECT: 72
 ]]></system-out>
   </testcase>
 </testsuite>
