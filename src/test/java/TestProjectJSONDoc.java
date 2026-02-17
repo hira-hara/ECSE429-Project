@@ -1,5 +1,7 @@
 
 import static io.restassured.RestAssured.*;
+
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import static org.hamcrest.Matchers.*;
 import org.junit.jupiter.api.*;
@@ -13,15 +15,11 @@ public class TestProjectJSONDoc {
 
     @BeforeAll
     static void ServiceRunningCheck() {
+        RestAssured.baseURI = BASE_URL;
         try {
-            given()
-                .baseUri(BASE_URL)
-            .when()
-                .get("/projects")
-            .then()
-                .statusCode(200); 
+            given().get("/projects").then().statusCode(200);
         } catch (Exception e) {
-            Assumptions.abort("Service not running.");
+            Assumptions.abort("Service is not running at " + BASE_URL + ". Skipping tests.");
         }
     }
 
@@ -31,7 +29,7 @@ public class TestProjectJSONDoc {
                 .contentType(ContentType.JSON)
                 .body("{\"title\":\"Initial Project\", \"description\":\"Setup state\"}")
                 .post("/projects");
-        
+
         testProjectId = response.jsonPath().getString("id");
     }
 
@@ -42,21 +40,20 @@ public class TestProjectJSONDoc {
         }
     }
 
-/* JSON TESTS */
+    /* JSON TESTS */
 
     @Test
     @DisplayName("GET /projects JSON")
     void testGetProject() {
         given()
-            .accept(ContentType.JSON)
-        .when()
-            .get("/projects")
-        .then()
-            .statusCode(200)
-            .contentType(ContentType.JSON)
-            .body("size()", greaterThan(0))
-            .body("projects", hasSize(greaterThan(0)));
+                .accept(ContentType.JSON)
+                .when()
+                .get("/projects")
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .body("size()", greaterThan(0))
+                .body("projects", hasSize(greaterThan(0)));
     }
 
-    
 }
