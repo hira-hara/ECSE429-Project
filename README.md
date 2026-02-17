@@ -3,9 +3,9 @@
 This is our ECSE429 Software Validation Project, Part A Unit Test Suite
 
 ### Assignment of Unit Tests
-- Todos: Sophia
+- Categories: Sophia
 - Projects: Ida
-- Categories: Ivan
+- Todo: Ivan
 - Interoperability: Amy
 
 - Some of the intercapability relationship endpoints were tested by our respective capability modules.
