@@ -1,72 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestProjectJSONDoc" time="2.737" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestProjectJSONDoc" time="0.208" tests="9" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="17"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project\target\test-classes;C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project\target\classes;C:\Users\idasu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\idasu\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\idasu\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\idasu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\idasu\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\idasu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\idasu\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\idasu\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\idasu\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\idasu\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\idasu\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\idasu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\idasu\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\idasu\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
-    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/izhang2/Code/ECSE429Project/ECSE429-Project/target/test-classes:/Users/izhang2/Code/ECSE429Project/ECSE429-Project/target/classes:/Users/izhang2/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/izhang2/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/izhang2/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/izhang2/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/izhang2/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/izhang2/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/izhang2/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/izhang2/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/izhang2/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/izhang2/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/izhang2/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/izhang2/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/izhang2/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/izhang2/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/izhang2/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/izhang2/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/izhang2/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/izhang2/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/izhang2/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/izhang2/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/Users/izhang2/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/Users/izhang2/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/Users/izhang2/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/Users/izhang2/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="user.timezone" value="America/Toronto"/>
-    <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="17"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="GB"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-17.0.18.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\idasu\AppData\Local\Temp\surefire11492528331161742116\surefirebooter-20260217112747343_3.jar C:\Users\idasu\AppData\Local\Temp\surefire11492528331161742116 2026-02-17T11-27-47_161-jvmRun1 surefire-20260217112747343_1tmp surefire_0-20260217112747343_2tmp"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/izhang2/Code/ECSE429Project/ECSE429-Project/target/surefire/surefirebooter-20260217144751559_3.jar /Users/izhang2/Code/ECSE429Project/ECSE429-Project/target/surefire 2026-02-17T14-47-51_516-jvmRun1 surefire-20260217144751559_1tmp surefire_0-20260217144751559_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="TestProjectJSONDoc"/>
-    <property name="surefire.test.class.path" value="C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project\target\test-classes;C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project\target\classes;C:\Users\idasu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\idasu\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\idasu\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\idasu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\idasu\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\idasu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\idasu\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\idasu\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\idasu\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\idasu\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\idasu\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\idasu\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\idasu\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\idasu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\idasu\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\idasu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\idasu\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
+    <property name="surefire.test.class.path" value="/Users/izhang2/Code/ECSE429Project/ECSE429-Project/target/test-classes:/Users/izhang2/Code/ECSE429Project/ECSE429-Project/target/classes:/Users/izhang2/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/izhang2/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/izhang2/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/izhang2/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/izhang2/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/izhang2/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/izhang2/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/izhang2/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/izhang2/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/izhang2/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/izhang2/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/izhang2/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/izhang2/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/izhang2/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/izhang2/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/izhang2/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/izhang2/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/izhang2/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/izhang2/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/izhang2/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/Users/izhang2/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar:/Users/izhang2/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar:/Users/izhang2/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/Users/izhang2/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\idasu"/>
+    <property name="user.home" value="/Users/izhang2"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2026-01-20"/>
-    <property name="java.home" value="C:\Program Files\Microsoft\jdk-17.0.18.8-hotspot"/>
-    <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/izhang2/Code/ECSE429Project/ECSE429-Project"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\idasu\AppData\Local\Temp\surefire11492528331161742116\surefirebooter-20260217112747343_3.jar"/>
-    <property name="user.script" value=""/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/izhang2/Code/ECSE429Project/ECSE429-Project/target/surefire/surefirebooter-20260217144751559_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="17.0.18+8-LTS"/>
-    <property name="user.name" value="idasu"/>
-    <property name="path.separator" value=";"/>
-    <property name="os.version" value="10.0"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.2"/>
+    <property name="user.name" value="izhang2"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.0.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Microsoft-13106358"/>
-    <property name="localRepository" value="C:\Users\idasu\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
-    <property name="java.io.tmpdir" value="C:\Users\idasu\AppData\Local\Temp\"/>
-    <property name="java.version" value="17.0.18"/>
-    <property name="user.dir" value="C:\Users\idasu\OneDrive\Desktop\Folders\College\McGill\U3\W2026\ECSE429\Project\ECSE429-Project"/>
-    <property name="os.arch" value="amd64"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/izhang2/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/xs/6m64mw7s1nq8290mh_8zjv8m0000gn/T/"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="/Users/izhang2/Code/ECSE429Project/ECSE429-Project"/>
+    <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-17.0.18.8-hotspot\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;c:\Users\idasu\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\idasu\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Microsoft\jdk-17.0.18.8-hotspot\bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\MATLAB\R2025b\runtime\win64;C:\Program Files\MATLAB\R2025b\bin;C:\Users\idasu\AppData\Local\Microsoft\WindowsApps;C:\Users\idasu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\idasu\AppData\Roaming\npm;C:\Users\idasu\AppData\Local\Python\bin;C:\Users\idasu\OneDrive\Desktop\Folders\Program Files - Java\apache-maven-3.9.12\bin;c:\Users\idasu\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/izhang2/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Microsoft"/>
-    <property name="java.vm.version" value="17.0.18+8-LTS"/>
-    <property name="java.specification.maintenance.version" value="1"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="61.0"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.2"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testHeadProjectIDTasks" classname="TestProjectJSONDoc" time="0.728"/>
-  <testcase name="testGetProjectID" classname="TestProjectJSONDoc" time="0.085">
-    <system-out><![CDATA[TEST PROJECT: 29
-]]></system-out>
-  </testcase>
-  <testcase name="testPostProjectErr" classname="TestProjectJSONDoc" time="0.08">
+  <testcase name="testHeadProjectIDTasks" classname="TestProjectJSONDoc" time="0.029"/>
+  <testcase name="testDeleteProjectIDErr" classname="TestProjectJSONDoc" time="0.029"/>
+  <testcase name="testPostProjectErr" classname="TestProjectJSONDoc" time="0.021">
     <system-out><![CDATA[HTTP/1.1 404 Not Found
-Date: Tue, 17 Feb 2026 16:27:50 GMT
+Date: Tue, 17 Feb 2026 19:47:52 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Server: Jetty(9.4.z-SNAPSHOT)
@@ -78,32 +76,35 @@ Server: Jetty(9.4.z-SNAPSHOT)
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testGetProject" classname="TestProjectJSONDoc" time="0.073"/>
-  <testcase name="testPostProjectTasks" classname="TestProjectJSONDoc" time="0.065">
-    <system-out><![CDATA[HTTP/1.1 201 Created
-Date: Tue, 17 Feb 2026 16:27:50 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Server: Jetty(9.4.z-SNAPSHOT)
+  <testcase name="testGetProjectID" classname="TestProjectJSONDoc" time="0.017">
+    <system-out><![CDATA[TEST PROJECT: 1
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateProject" classname="TestProjectJSONDoc" time="0.088"/>
-  <testcase name="testGetProjectIDTasks" classname="TestProjectJSONDoc" time="0.049"/>
-  <testcase name="testDeleteProjectIDErr" classname="TestProjectJSONDoc" time="0.045"/>
-  <testcase name="testCreateUpdateDeleteFlow" classname="TestProjectJSONDoc" time="0.073">
+  <testcase name="testCreateUpdateDeleteFlow" classname="TestProjectJSONDoc" time="0.03">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Tue, 17 Feb 2026 16:27:50 GMT
+Date: Tue, 17 Feb 2026 19:47:52 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Server: Jetty(9.4.z-SNAPSHOT)
 
 {
-    "id": "71",
+    "id": "21",
     "title": "Done Project",
     "completed": "true",
     "active": "false",
     "description": ""
 }
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateProject" classname="TestProjectJSONDoc" time="0.022"/>
+  <testcase name="testGetProject" classname="TestProjectJSONDoc" time="0.019"/>
+  <testcase name="testGetProjectIDTasks" classname="TestProjectJSONDoc" time="0.016"/>
+  <testcase name="testPostProjectTasks" classname="TestProjectJSONDoc" time="0.019">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Date: Tue, 17 Feb 2026 19:47:52 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Server: Jetty(9.4.z-SNAPSHOT)
 ]]></system-out>
   </testcase>
 </testsuite>
