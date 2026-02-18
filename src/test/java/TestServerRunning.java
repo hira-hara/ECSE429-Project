@@ -2,7 +2,7 @@ import static io.restassured.RestAssured.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class TestDemo {
+public class TestServerRunning {
     @Test
     @DisplayName("Check if the Todo Manager API is running")
     void testApiIsUp() {
